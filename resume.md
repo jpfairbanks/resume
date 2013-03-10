@@ -77,9 +77,3 @@ Non-Research Achievements
     - Programming languages (most familiar to least) Python, C, Bash, Emacs Lisp, C#/Java, Matlab
     - Familiar with `*NIX` command line, Markdown, \LaTeX
     - Avid Linux User
-
-References
----------
-
-\bibliographystyle{plain}
-\nobibliography{master}
