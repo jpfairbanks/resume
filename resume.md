@@ -4,8 +4,7 @@ James Fairbanks CV
 352.340.3247
 james.fairbanks@gatech.edu
 <http://www.jpfairbanks.wordpress.com>
-[Markdown](https://raw.github.com/jpfairbanks/resume/master/resume.md) -> [PDF](https://raw.github.com/jpfairbanks/resume/master/resume.pdf), [HTML](http://jpfairbanks.github.com/resume), and more
-<http://github.com/jpfairbanks/resume>
+<http://jpfairbanks.github.com/>
 
 Interests
 ---------
@@ -37,16 +36,15 @@ Work Experience
     Graduate Research Assistant, 2012 - Present
 
     -   Large Graph Analysis
-    -   High Performance Computing techniques
-    -   Advised by Professor David A. Bader
+    -   High Performance Computing
 
 *   **CNL Software** (Indianapolis, IN)
 
     Software Engineering Intern Summer, 2011
 
-    -   Developed a program to analyze geo-location data for
+    - Developed a program to analyze geo-location data for
     physical security of a building, and present real time data to management.
-
+    - C#/.Net Development
 
 Research
 --------
@@ -56,8 +54,7 @@ Research
     - Poster at Graph Theory at Georgia Tech (GT@GT) May 7-11 2012
 
 *    Peer Reviewed Journal Articles
-    - \cite{Fairbanks2011}
-    - James P. Fairbanks, A Ramsey Theorem for Indecomposable Matchings,  \textit{Electronic Journal of Combinatorics} Vol 18(1) Dec 2011.
+    - James P. Fairbanks, *A Ramsey Theorem for Indecomposable Matchings*,  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
 
 Non-Research Achievements
 -------------------------
@@ -77,7 +74,7 @@ Non-Research Achievements
 
 *    Skills
     - Computational Data Analysis (using pandas and pylab)
-    - Programming languages (most familiar to least) Python, C, Bash, Emacs Lisp, Java, Matlab, CUDA.
+    - Programming languages (most familiar to least) Python, C, Bash, Emacs Lisp, C#/Java, Matlab
     - Familiar with `*NIX` command line, Markdown, \LaTeX
     - Avid Linux User
 
