@@ -19,4 +19,4 @@ clean:
 deliver: resume.pdf resume.html
 	scp resume.pdf jpfnet:cv.pdf
 	scp resume.html jpfnet:cv.html
-	scp resume.css jpfnet:resume.css
+	#scp resume.css jpfnet:resume.css
