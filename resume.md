@@ -86,7 +86,7 @@ Non-Research Achievements
     - Phi Beta Kappa, University of Florida Chapter 2012
 
 *    Leadership and Service
-
+    - Georgia Tech College of Computing Graduate Student Association VP for the School of CSE, 2015-Present
     - Pi Mu Epsilon Chapter President, 2011-2012
         - I organized a series of talks for the mathematics students at UF on diverse mathematical topics and skills like LaTeX, programming and technical communication in the field.
     - Eagle Scout, 2009-Life
