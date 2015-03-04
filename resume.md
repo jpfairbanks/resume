@@ -93,6 +93,6 @@ Non-Research Achievements
 
 *    Skills
     - Computational Data Analysis (using pandas and pylab)
-    - Programming languages (most familiar to least) Golang, Python, Julia, C, Bash, Matlab, C#/Java
+    - Programming languages (most familiar to least) Julia, Golang, Python, C, Bash, Matlab, C#/Java
     - Familiar with `*NIX` command line, \LaTeX
     - Avid Linux User
