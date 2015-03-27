@@ -59,14 +59,15 @@ Work Experience
 Research
 --------
 
+*    Peer Reviewed Journal Articles
+    - J.P. Fairbanks, R. Kannan, H. Park, D. A. Bader, [Behavioral Clusters in Dynamic Graphs](), Parallel Computing Special Issue of Scientific Graph Analysis 2015
+    - J.P. Fairbanks, [*A Ramsey Theorem for Indecomposable Matchings*](http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf),  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
+
 *    Conference Publications
     - Poster at SIAM Computational Science and Engineering [*Discovering Block Structure with Approximate Eigenvectors*]() Mar 2015
     - J.P. Fairbanks, D. Ediger, R. McColl, D.A. Bader, E. Gilbert, [*A Statistical Framework for Analyzing Streaming Graphs*](http://stingergraph.com/data/uploads/papers/streaming-twitter-stats.pdf), IEEE/ACM ASONAM 2013, Aug 2013.
     - Poster at Graph Theory at Georgia Tech (GT@GT) May 7-11 2012
 
-*    Peer Reviewed Journal Articles
-    - J.P. Fairbanks, Behavioral Clusters in Dynamic Graphs, Parallel Computing Special Issue of Scientific Graph Analysis 2015
-    - J.P. Fairbanks, [*A Ramsey Theorem for Indecomposable Matchings*](http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf),  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
 
 Teaching
 --------
@@ -92,7 +93,7 @@ Non-Research Achievements
     - Eagle Scout, 2009-Life
 
 *    Skills
-    - Computational Data Analysis (using pandas and pylab)
     - Programming languages (most familiar to least) Julia, Golang, Python, C, Bash, Matlab, C#/Java
+    - Computational Data Analysis (using pandas and pylab and Jupyter Notebook)
     - Familiar with `*NIX` command line, \LaTeX
     - Avid Linux User
