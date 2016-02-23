@@ -19,6 +19,7 @@ Education
     Ph.D Computational Science and Engineering 2012 - Present
     - Adviser: Professor David A. Bader
     - Qualifier: Computational Data Analysis and High Performance Computing passed Oct. 2013
+    - Admitted to Candidacy May 2015
 
 *   **University of Florida** (Gainesville, Florida)
 
@@ -31,6 +32,14 @@ Education
 
 Work Experience
 ---------------
+
+*   **Ionic Security** (Atlanta, GA)
+    
+    Data Scientist, Summer 2015
+
+    -   Developed data analytics software
+    -   Designed a service oriented architecture for near real time analysis.
+    -   Leveraged time series and network database technologies.
 
 *   **Lawrence Livermore National Laboratory** (Livermore, CA)
 
