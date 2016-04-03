@@ -9,7 +9,7 @@ james.fairbanks@gatech.edu
 Interests
 ---------
 
-*   Numerical, statistical, and streaming algorithms for analyzing modern massive graphs.
+*   Numerical, statistical, and streaming algorithms for analyzing modern massive datasets.
 
 Education
 ---------
@@ -77,6 +77,7 @@ Research
     - J.P. Fairbanks, [*A Ramsey Theorem for Indecomposable Matchings*](http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf),  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
 
 *    Conference Publications
+    - J.P. Fairbanks, A. Zakrzewska, D.A. Bader [*Novel Stopping Criteria for Spectral Partitioning*](www.siam.org/meetings/ns16/) SIAM Network Science July 2016
     - Poster at SIAM Computational Science and Engineering [*Discovering Block Structure with Approximate Eigenvectors*]() Mar 2015
     - J.P. Fairbanks, D. Ediger, R. McColl, D.A. Bader, E. Gilbert, [*A Statistical Framework for Analyzing Streaming Graphs*](http://stingergraph.com/data/uploads/papers/streaming-twitter-stats.pdf), IEEE/ACM ASONAM 2013, Aug 2013.
     - Poster at Graph Theory at Georgia Tech (GT@GT) May 7-11 2012
@@ -86,6 +87,7 @@ Teaching
 --------
 
 * Teaching Assitant at Georgia Tech
+    - CSE 6643 Numerical Linear Algebra under Prof. Haesun Park, Spring 2016
     - CSE 6220 High Performance Computing under Prof. Srinivas Aluru, Spring 2014 
 
 Non-Research Achievements
