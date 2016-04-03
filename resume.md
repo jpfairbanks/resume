@@ -16,10 +16,14 @@ Education
 
 *   **Georgia Institute of Technology** (Atlanta, GA)
 
-    Ph.D Computational Science and Engineering 2012 - Present
+    Ph.D Computational Science and Engineering 2012 - 2016
     - Adviser: Professor David A. Bader
+    - Title: Graph Analysis Combining Numerical, Statistical, and Streaming Techniques
     - Qualifier: Computational Data Analysis and High Performance Computing passed Oct. 2013
+    <!--
     - Admitted to Candidacy May 2015
+    - Defended March 28th 2016 
+    -->
 
 *   **University of Florida** (Gainesville, Florida)
 
