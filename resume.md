@@ -86,7 +86,7 @@ Research
 Teaching
 --------
 
-* Teaching Assitant at Georgia Tech
+* Teaching Assistant at Georgia Tech
     - CSE 6643 Numerical Linear Algebra under Prof. Haesun Park, Spring 2016
     - CSE 6220 High Performance Computing under Prof. Srinivas Aluru, Spring 2014 
 
