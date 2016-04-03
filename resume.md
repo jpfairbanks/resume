@@ -58,9 +58,11 @@ Work Experience
 
     Graduate Research Assistant, 2012 - Present
 
+    -   Applied Mathematics
+    -   Data Analysis
     -   Large Graph Analysis
     -   High Performance Computing
-
+    
 *   **CNL Software** (Indianapolis, IN)
 
     Software Engineering Intern, Summer 2011
@@ -99,6 +101,7 @@ Non-Research Achievements
     - Presidential Fellowship for Graduate Study at Georgia Tech 2012 - 2016
     - University Scholar at the University of Florida 2011 - 2012
     - Kermit Sigmon Scholarship *for service to the mathematical community*  2012
+    - Tau Beta Pi, Engineering Honor Society, Georgia Tech Chapter 2015 - Present
     - Phi Beta Kappa, University of Florida Chapter 2012
 
 *    Leadership and Service
