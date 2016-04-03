@@ -39,6 +39,7 @@ And finally run it like this:
     python resume.py tex < resume.md
 
 """
+from __future__ import print_function
 import hashlib
 import sys
 import re
@@ -86,10 +87,11 @@ def tex(lines, contact_lines, *args):
         return re.sub(pattern, r"\1\2%s\%d" % (repl, num_groups + 3), string,
                       flags=flags, **kwargs)
 
-    # pandoc doesn't seem to support markdown inside latex blocks, so we're
-    # just going to hardcode the two most common link formats for now so people
-    # can put links in their contact info
     def replace_links(line):
+        """ pandoc doesn't seem to support markdown inside latex blocks, so we're
+        just going to hardcode the two most common link formats for now so people
+        can put links in their contact info
+        """
         line = re.sub(r"<([^:]+@[^:]+?)>", r"\href{mailto:\1}{\1}", line)
         line = re.sub(r"<(http.+?)>", r"\url{\1}", line)
         return re.sub(r"\[([^\]]+)\]\(([^\)]+)\)", r"\href{\2}{\1}", line)
@@ -118,6 +120,8 @@ def tex(lines, contact_lines, *args):
 
 @processor.register
 def html(lines, contact_lines, *args):
+    """html: produce html format output.
+    """
     untex = ['LaTeX']
 
     for word in untex:
@@ -160,7 +164,7 @@ def main():
 
         contact_lines.extend(parts)
 
-    print processor.process(format, lines, contact_lines, *sys.argv[1:])
+    print(processor.process(format, lines, contact_lines, *sys.argv[1:]))
 
 if __name__ == '__main__':
     main()
