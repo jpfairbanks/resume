@@ -9,10 +9,11 @@ pdf:   clean $(PDFS)
 html:  clean $(HTML)
 
 %.html: %.md
-	python resume.py html < $< | pandoc -t html -c resume.css -o $@
+	python2 resume.py html < $< | pandoc -t html -c resume.css -o $@
 
 %.pdf:  %.md
-	python resume.py tex < $< | pandoc --template=./pandoc-templates/default.latex -H header.tex -o $@
+	# python2 resume.py tex < $< | pandoc --template=./pandoc-templates/default.latex -H header.tex -o $@
+	python2 resume.py tex < $< | pandoc -H header.tex -o $@
 
 clean:
 	rm -f *.html *.pdf
