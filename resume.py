@@ -46,6 +46,7 @@ import re
 
 
 GRAVATAR = "http://www.gravatar.com/avatar/{hash}?s=100"
+GRAVATAR = "http://www.jpfairbanks.net/docs/photo_small.jpg"
 
 
 class Processor(object):
@@ -130,14 +131,14 @@ def html(lines, contact_lines, *args):
         lines = map(replace, lines)
         contact_lines = map(replace, contact_lines)
 
-    gravatar = None
+    gravatar = GRAVATAR
     for line in contact_lines:
         if line.find("@") > 0:
             gravatar = GRAVATAR.format(
                 hash=hashlib.md5(line.lower().strip('<>')).hexdigest())
             break
     if gravatar is not None:
-        contact_lines.insert(0, "<img src='{}' />".format(gravatar))
+        contact_lines.insert(0, "<img src='{}' width=150/>".format(gravatar))
 
     lines.insert(0, "<div id='container'><div id='contact'>%s</div>\n" %
                          ("<p>" + "</p><p>".join(contact_lines) + "</p>"))
