@@ -18,6 +18,6 @@ html:  clean $(HTML)
 clean:
 	rm -f *.html *.pdf
 deliver: resume.pdf resume.html
-	scp resume.pdf jpfnet:cv.pdf
-	scp resume.html jpfnet:cv.html
+	scp resume.pdf jpfnet:public/cv.pdf
+	scp resume.html jpfnet:public/cv.html
 	#scp resume.css jpfnet:resume.css

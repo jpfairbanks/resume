@@ -41,13 +41,19 @@ Work Experience
     Research Engineer II, May 2016 - Present
     
     -   Conduct research into high performance data analysis software
-    -   Technical lead of a multi-year strategic research initiative studying near real-time analysis of news articles and propaganda 
-    -   Contributed to DARPA proposal for modeling and simulation of social processes
+    -   Principal Investigator of NIJ grant
+    -   Technical Task Lead of a multi-year strategic research initiative studying near real-time analysis of news articles and propaganda 
+    -   Technical Task Lead of multiple Office of Naval Research research programs
     -   Research advisor to several students in Graduate and Undergraduate programs
+    -   Teach professional education courses at GTPE on Data Analytics
     -   Projects:
+        -  Worked with Acoustics Engineers to develop a data management and analytics application for physical scientists and engineers.
+        -  Developed digital evidence submission application for National Institutes of Justice and Dekalb Co. PD using PKI and Blockchain technology.
         -  Developed a web application for personalized medicine at the hospital scale using Golang, Python, and PostgresDB deployed with Docker.
         -  Applied machine learning techniques to personalized medicine for predicting adverse patient outcomes presented in a real time Speech to Text physician facing web interface.
-        -  Technical lead for submission to NIJ crime prediction challenge. Predicted crimes in Portland, OR using temporal and geographic features derived from crime statistics and GIS databases
+        -  Lead for submission to NIJ crime prediction challenge. Predicted crimes in Portland, OR using temporal and geographic features derived from crime statistics and GIS databases
+        -  Lead submission to Fake News Challenge yielding a top 10 performance at identifying fake news articles.
+        -  Devloped a web application for building predictive models in social science (DARPA NGSS)
     
 *   **Ionic Security** (Atlanta, GA)
     
@@ -97,22 +103,30 @@ Open Source
 
 Core maintainer of [*LightGraphs*](github.com/JuliaGraphs/LightGraphs.jl) the most widely used Graph Algorithm Package in [*Julia*](julialang.org).
 
+Developer of [*STINGER*](stingergraph.com) the fastest streaming dynamic graph library for shared memory parallel computers.
+
 Research
 --------
 
 *    Peer Reviewed Journal Articles
-    - J.P. Fairbanks, D. A. Bader, and G. D. Sanders [Graph Partitioning with Spectral Blends](), Oxford Journal of Complex Networks, Jan 2017
-    - J.P. Fairbanks, R. Kannan, H. Park, D. A. Bader, [Behavioral Clusters in Dynamic Graphs](), Parallel Computing Special Issue of Scientific Graph Analysis 2015
-    - J.P. Fairbanks, [*A Ramsey Theorem for Indecomposable Matchings*](http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf),  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
+    - J. P. Fairbanks, R. Kannan, H. Park, D. A. Bader, [Behavioral Clusters in Dynamic Graphs](), Parallel Computing Special Issue of Scientific Graph Analysis 2015
+    - J. P. Fairbanks, [*A Ramsey Theorem for Indecomposable Matchings*](http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf),  Electronic Journal of Combinatorics, Vol 18(1) Dec 2011.
 
 *    Peer Reviewed Conference Publications
+    - N. Campbell, T. Goodyear, W. Messer, E. Stuart, J. P. Fairbanks [Digital Witness: Remote Methods for Volunteering Digital Evidence on Mobile Devices](http://ieee-hst.org/october23.htm), IEEE Technologies for Homeland Security. Oct 2018
+    - R. Varkey Thankachan, B. P. Swenson, J. P. Fairbanks [Performance Effects of Backing Data Stores in Community Detection Algorithms](http://ieee-hpec.org/copy/agendatext.html), IEEE High Performance Extreme Computing. Sept 2018
+    - N. Fitch, N. Knauf, J. P. Fairbanks, E. Briscoe [Credibility Assessment in the News: Do we need to read?](http://snap.stanford.edu/mis2/files/MIS2_paper_17.pdf), ACM WSDM MIS2, Feb 2018
+    - R. Varkey Thankachan, E. Hein, B. P. Swenson, J. P. Fairbanks [Integrating Productivity-Oriented Programming Languages with High-Performance Data Structures](https://ieeexplore.ieee.org/document/8091068/), IEEE High Performance Extreme Computing. Sept 2017
+    - J. P. Fairbanks, D. M. Ediger [Deriving Streaming Graph Algorithms from
+Static Definitions](http://graphanalysis.org/GABB17_program_final.pdf), IEEE International Parallel and Distributed Processing Graph Algorithms Building Blocks 2017
+    - J. P. Fairbanks, D. A. Bader, and G. D. Sanders [*Graph Partitioning with Spectral Blends*](), Oxford Journal of Complex Networks, Jan 2017
     - E. Nathan, G. Sanders, J. P. Fairbanks, V. Henson and D. Bader [*Graph Ranking Guarantees for Numerical Approximations to Katz Centrality*](). International Conference On Computational Science 2017
     - D. M. Ediger and J. P. Fairbanks[*Deriving Streaming Graph Algorithms from Static Definitions*](). IEEE Parallel and Distributed Processing - Graph Algorithm Building Blocks 2017.
     - T. Frederick, C. Herlihy, J. P. Fairbanks [*Using Big Data to Predict and Analyze Cooperation and Conflict*](). The Conflict Conference at UT-Austin 2017.
-	- A. Zakrzewska, E. Nathan, J P. Fairbanks, D. A. Bader [*A local measure of community change in dynamic graphs*](). ASONAM 2016: 349-353
-    - J.P. Fairbanks, A. Zakrzewska, D.A. Bader [*Novel Stopping Criteria for Spectral Partitioning*](www.siam.org/meetings/ns16/) SIAM Network Science July 2016
+	- A. Zakrzewska, E. Nathan, J. P. Fairbanks, D. A. Bader [*A local measure of community change in dynamic graphs*](). ASONAM 2016: 349-353
+    - J. P. Fairbanks, A. Zakrzewska, D.A. Bader [*Novel Stopping Criteria for Spectral Partitioning*](www.siam.org/meetings/ns16/) SIAM Network Science July 2016
     - Poster at SIAM Computational Science and Engineering [*Discovering Block Structure with Approximate Eigenvectors*]() Mar 2015
-    - J.P. Fairbanks, D. Ediger, R. McColl, D.A. Bader, E. Gilbert, [*A Statistical Framework for Analyzing Streaming Graphs*](http://stingergraph.com/data/uploads/papers/streaming-twitter-stats.pdf), IEEE/ACM ASONAM 2013, Aug 2013.
+    - J. P. Fairbanks, D. Ediger, R. McColl, D.A. Bader, E. Gilbert, [*A Statistical Framework for Analyzing Streaming Graphs*](http://stingergraph.com/data/uploads/papers/streaming-twitter-stats.pdf), IEEE/ACM ASONAM 2013, Aug 2013.
     - Poster at Graph Theory at Georgia Tech (GT@GT) May 7-11 2012
 
 
@@ -120,11 +134,20 @@ Teaching
 --------
 
 * Georgia Tech Professional Education
+	- Data Analytics Methodology with J. Poovey, D. Ediger, and M. Rost. Spring 2017
 	- Big Data Analytics with J. Poovey, D. Ediger, and M. Rost. Fall 2016
 
 * Teaching Assistant at Georgia Tech
     - CSE 6643 Numerical Linear Algebra under Prof. Haesun Park, Spring 2016
     - CSE 6220 High Performance Computing under Prof. Srinivas Aluru, Spring 2014 
+
+Mentoring
+-----------
+
+- Rohit Varkey _MS CS Georgia Tech_
+- Pushkar Godbole _MS CSE Georgia Tech_
+- Nate Knauf _BS CS Georgia Tech_
+- Mikah Halter _BS CS Georgia Tech_
 
 Non-Research Achievements
 -------------------------
@@ -149,10 +172,10 @@ Skills
 --------
 *    Some of my technical skills:
     - Programming languages (most familiar to least) Julia, Golang, Python, C, Bash, SQL, Matlab, C#/Java
-    - Computational Data Analysis (using pandas and pylab and Jupyter Notebook)
+    - Computational Data Analysis (pandas, pylab, Jupyter Notebook)
     - Web development with Golang and Python (flask)
-    - Database Applications primarily with PostgreSQL
-    - Continuous Integration/Deployment, Docker
+    - Database Applications primarily with PostgreSQL and MongoDB
+    - Continuous Integration/Deployment, Docker, DC/OS, Kubernetes
     - Test Driven Development (TDD)
     - Familiar with `*NIX` command line, git, make, \LaTeX
     - Avid Linux User
