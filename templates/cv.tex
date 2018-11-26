@@ -1,0 +1,205 @@
+{{define "item"}}
+\item {{ . }}{{end}}
+
+{{define "Section" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+{{ .Body }}
+
+%% end section {{ .Name }}
+{{end}}
+
+{{define "Funding" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+\begin{itemize}
+\item \begin{itemize}[align=right,labelwidth=2cm]
+\tightlist
+{{ range .Grants  }}
+\item[{ \color{naval} {{ .Dates.Start }} {{with .Dates.End }}--{{- . -}}{{end}} }]
+       {{.Role -}},
+       {{.Agency -}},
+       \emph{ {{.Title -}}}{{with .Amount }}, {{.}} {{end}}
+       {{with .Agreement }} {{.}} {{end}}
+{{end}}
+\end{itemize}
+\end{itemize}
+
+%% end section {{ .Name }}
+{{end}}
+
+{{define "Mentoring" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+\begin{itemize} \item
+\begin{itemize}
+\tightlist
+{{ range .Students  }}
+\item[{ \color{naval} {{ .Dates }} }]
+       {{ .Name -}},\emph{ {{ .Degree }} {{.Year}}},
+       {{ .Company }}
+{{end}}
+\end{itemize}
+\end{itemize}
+
+%% end section {{ .Name }}
+{{end}}
+
+{{define "ListSection" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+\begin{itemize}
+\tightlist
+{{ range .Items  }}
+\item {{ . }}
+{{end}}
+\end{itemize}
+
+%% end section {{ .Name }}
+{{end}}
+
+{{define "ActivitySection" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+\begin{itemize}
+\tightlist
+{{ range .Categories  }}
+\item \textbf{ {{ .Name }} }
+  \begin{itemize}[align=right]
+     {{range .Activities}}
+          \item[{\color{naval}{{.Date}} }] {{ .Title }}
+              {{with .Details}} \begin{itemize}
+                 {{range .}} \item {{.}} {{end}}
+               \end{itemize} {{end}}
+      {{end}}
+   \end{itemize}
+{{end}}
+\end{itemize}
+{{end}}
+
+{{define "Publications" }}
+\hypertarget{ {{- .Label -}} }{%
+\subsection{ {{- .Name -}} }\label{ {{- .Label -}} } }
+% template generated section
+
+\begin{itemize}
+\tightlist
+{{ range .Categories  }}
+\item \textbf{ {{ .Name }} }
+  \begin{itemize}[align=right]
+     {{range .Activities}}
+          \item \emph{ {{ .Title -}}}{{with .Authors }}, {{ . }}{{end}}{{with .Venue}}, {{ . }}{{end}}{{with .Date}}, {{ . }}{{end}}
+              {{with .Details}} \begin{itemize}
+                 {{range .}} \item {{.}} {{end}}
+               \end{itemize} {{end}}
+      {{end}}
+   \end{itemize}
+{{end}}
+\end{itemize}
+%% end section {{ .Name }}
+{{end}}
+
+
+{{define "EducationSection"}}
+
+\hypertarget{ {{- .Section.Label -}} }{%
+\subsection{ {{- .Section.Name -}} }\label{ {{- .Section.Label -}} } }
+% template generated section
+
+\begin{itemize}
+\tightlist
+{{ range .Schools  }}
+\item \textbf{ {{- .Name -}} } ({{- .Address -}})
+
+{{ .Major }}, {\color{naval}{{.Dates}} }
+
+  \begin{itemize}[align=right]
+  \tightlist
+      {{with .Advisor }}  \item Adviser: {{ . }} {{end}}
+      {{with .Committee }}\item Committee: {{ . }} {{end}}
+      {{with .Dissertation }}   \item Dissertation: \emph{ {{ . }} }{{end}}
+      {{with .Qualifier }}\item Qualifer: {{ . }} {{end}}
+      \item {{.Details}}
+      {{with .Thesis }}   \item Thesis: \emph{ {{ . }} }{{end}}
+   \end{itemize}
+{{end}}
+\end{itemize}
+%% end section {{ .Name }}
+
+{{end}}
+
+{{define "ExperienceSection"}}
+
+\hypertarget{ {{- .Section.Label -}} }{%
+\subsection{ {{- .Section.Name -}} }\label{ {{- .Section.Label -}} } }
+% template generated section
+
+\begin{itemize}
+\tightlist
+{{ range .Items  }}
+\item \textbf{ {{- .Name -}} } ({{- .Address -}})
+
+{{ .Title }}, {\color{naval}{{.Dates}} }
+
+  \begin{itemize}[align=right]
+  \tightlist
+      {{range .Details }}
+      \item {{ . }}
+      {{end}}
+   \end{itemize}
+{{end}}
+\end{itemize}
+%% end section {{ .Name }}
+
+{{end}}
+
+\documentclass[]{article}
+
+
+{{template "Header" .}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{nospace}\begin{flushright}
+{{ .Email }}
+
+\url{ {{.URL}} }
+
+\url{ github.com/{{.GitHub}} }
+\end{flushright}\end{nospace}
+
+\hypertarget{james-fairbanks-phd}{%
+\section{ {{.Name}} }\label{james-fairbanks-phd}}
+
+{{ template "EducationSection" .Education }}
+
+{{template "ExperienceSection" .Experience }}
+
+{{template "Funding" .Funding}}
+
+{{template "ActivitySection" .Achievements}}
+
+{{template "Publications" .Research}}
+
+{{template "ListSection" .OpenSource}}
+
+{{template "ActivitySection" .Teaching}}
+
+{{ template "Mentoring" .Mentoring }}
+
+{{template "ListSection" .Skills}}
+
+\end{document}

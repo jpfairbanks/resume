@@ -1,0 +1,49 @@
+{{define "Header"}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content=resume.go">
+  <meta name="author" content="{{.Author}}">
+  <meta name="description" content="Resume">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/mono-blue.min.css">
+  <link rel="stylesheet" href="http://{{.URL}}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://{{.URL}}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://{{.URL}}/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="http://{{.URL}}/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://{{.URL}}/css/custom.css">
+
+  <link rel="alternate" href="http://{{.URL}}/index.xml" type="application/rss+xml" title="JPF">
+  <link rel="feed" href="{{.URL}}/index.xml" type="application/rss+xml" title="JPF">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+  <link rel="canonical" href="http://{{.URL}}/cv.html">
+	<script type="text/javascript" async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+
+<meta name="twitter:site" content="@fairbanksjp">
+<meta name="twitter:creator" content="@fairbanksjp">
+
+<meta name="twitter:description" content="Biography Experience Teaching Mentoring Skills Honors
+Biography I earned a Ph.D in Computational Science and Engineering at Georgia Tech. My research focuses on numerical, statistical, and streaming algorithms for data analysis. The applications include complex networks, online media, and observational medical data. My Dissertation Defense was on March 28th 2016.
+My CV can be found in HTML or PDF For information on my Programming and Software related activities, you can go to my Github site.">
+<meta name="twitter:title" content="About Me">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{.URL}}/img/headshot_bw.png">
+<meta property="og:title" content="About Me">
+<meta property="og:description" content="Biography Experience Teaching Mentoring Skills Honors
+Biography I earned a Ph.D in Computational Science and Engineering at Georgia Tech. My research focuses on numerical, statistical, and streaming algorithms for data analysis. The applications include complex networks, online media, and observational medical data. My Dissertation Defense was on March 28th 2016.
+My CV can be found in HTML or PDF For information on my Programming and Software related activities, you can go to my Github site.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{.URL}}/about/">
+    <meta property="og:updated_time" content="2017-07-03T00:00:00+00:00">
+
+  <title>{{ .Title }}</title>
+
+</head>
+{{end}}

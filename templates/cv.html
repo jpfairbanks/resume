@@ -1,0 +1,189 @@
+{{define "Section"}}
+<h1 id="{{.Label}}">{{.Name}}</h1>
+{{end}}
+
+{{define "Education"}}
+{{template "Section" .}}
+{{range .Schools}}
+<h3>{{.Name}}</h3>
+    <p>{{ .Major }}, {{ .Dates }} ({{ .Address }})</p>
+    <ul>
+         <li> {{ .Details }} </li>
+         {{with .Advisor}} <li> Adviser: {{ .}} </li> {{end}}
+         {{with .Thesis}} <li> Thesis: {{ . }} </li> {{end}}
+         {{with .Dissertation}} <li> Dissertation: {{ . }} </li> {{end}}
+         {{with .Qualifier}} <li> Qualifier: {{ . }} </ li> {{end}}
+         {{with .Committee}} <li> Committee: {{ . }} </li> {{end}}
+    </ul>
+{{end}}
+{{end}}
+
+{{define "Experience"}}
+{{template "Section" .}}
+<ul>
+{{range .Items}}
+  <li>
+    <p><strong>{{ .Name }}</strong> ({{ .Address }})</p>
+    <p>{{ .Title }}, {{ .Dates }}</p>
+    <ul> {{range .Details}}
+         <li> {{ . }} </li>
+         {{end}}
+    </ul>
+  </li>
+{{end}}
+</ul>
+{{end}}
+
+{{define "Date"}} <span class="date">{{.Date}}</span>
+{{end}}
+{{define "ActivitySection"}}
+{{template "Section" .}}
+{{ range .Categories  }}
+<h3 id="{{.Name}}"> {{ .Name }} </h3>
+  <table>
+     {{range .Activities}}
+     <tr>
+          <td>{{template "Date" .}}</td>
+          <td>{{if .URL}}<a href="{{.URL}}">{{end}}{{ .Title }}{{if .URL}}</a>{{end}}{{with .Authors }}, {{.}}{{end}}{{with .Venue }}, {{.}}{{end}}
+              {{with .Details}} <ul style="list-style: none;">
+                 {{range .}} <li> {{.}} </li> {{end}}
+               </ul> {{end}}
+          </td>
+      {{end}}
+   </table>
+{{end}}
+{{end}}
+
+<html>
+  {{template "Header" .}}
+
+<body>
+<article class="article" itemscope="" itemtype="http://schema.org/Article">
+  <div class="article-container" >
+  <div class="article-metadata">
+  <span class="article-title">
+    <h1 itemprop="name">{{.Name}}</h1>
+  </span>
+  <span class="article-date">
+    <time datetime="{{.Date}}" itemprop="datePublished">
+      {{.Date}}
+    </time>
+  </span>
+<!--
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjpfairbanks.net%2fabout%2f" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=About%20Me&amp;url=http%3a%2f%2fjpfairbanks.net%2fabout%2f" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjpfairbanks.net%2fabout%2f&amp;title=About%20Me" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo" href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjpfairbanks.net%2fabout%2f&amp;title=About%20Me" target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email" href="mailto:?subject=About%20Me&amp;body=http%3a%2f%2fjpfairbanks.net%2fabout%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+-->
+
+</div>
+
+<div class="article-style" itemprop="articleBody">
+
+{{define "Anchor"}}
+  <a href="#{{.Label}}">{{.Name}}</a>
+{{end}}
+
+<p>
+  {{template "Anchor" .Education}} |
+  {{template "Anchor" .Experience}} |
+  {{template "Anchor" .Achievements}} |
+  {{template "Anchor" .Teaching}} |
+  {{template "Anchor" .Mentoring}} |
+  {{template "Anchor" .Skills}}
+</p>
+
+{{template "Education" .Education}}
+{{template "Experience" .Experience}}
+
+{{define "Funding"}}
+{{template "Section" .}}
+<table>
+  <tr><th>Dates</th><th>Role</th><th>Sponsor</th><th>Title</th><th>Agreement</th><th>Amount</th></tr>
+  {{range .Grants}}
+  <tr>
+			<td style="width: 14%">{{.Dates.Start}} {{with .Dates.End}} -- {{.}} {{end}}</td>
+			<td>{{.Role}}</td>
+			<td>{{.Agency}}</td>
+			<td>{{.Title}}</td>
+			<td>{{.Agreement}}</td>
+			<td>{{.Amount}}</td>
+  </tr>
+  {{end}}
+</table>
+{{end}}
+{{template "Funding" .Funding}}
+{{template "ActivitySection" .Achievements}}
+{{template "ActivitySection" .Teaching}}
+
+
+<!-- I was the TA for CSE6643 Numerical Linear Algebra being taught by Prof. Haesun Park. The syllabus is available here. -->
+
+<!-- Because I frequently need to define the same macros in every latex document, I decided to write my own style file on the web. You can use it by downloading it as jpfairbanks.sty and then \usepackage{jpfairbanks}. The commands can change at any time so make a copy or be prepared. -->
+
+<!-- I was the TA for CSE6220 which was taught by Prof. Srinivas Aluru. You can find some helpful resources that might be helpful to students and others. If you are looking to learn about LaTeX you can get it at the source, and then read the Wikibook. -->
+
+<!-- Because I frequently need to define the same macros in every latex document, I decided to write my own style file on the web. You can use it by downloading it as jpfairbanks.sty and then \usepackage{jpfairbanks}. The commands can change at any time so make a copy or be prepared. -->
+
+{{define "Mentoring" }}
+{{template "Section" .}}
+
+<table>
+<tr><th>Dates</th><th>Name</th><th>Degree</th><th>Graduation</th><th>Employment</th></tr>
+{{ range .Students  }}
+	<tr>
+			<td class="Date">{{.Dates}}</td>
+			<td>{{ .Name }}</td>
+			<td><emph> {{ .Degree }} </emph></td>
+			<td class="Year">{{.Year}}</td>
+			<td>{{ .Company }}<td>
+	</tr>
+{{end}}
+</table>
+{{end}}
+
+{{template "Mentoring" .Mentoring}}
+
+{{define "ListSection"}}
+{{template "Section" .}}
+<ul>{{range .Items}}
+<li>{{.}}</li>
+{{end}}
+</ul>
+{{end}}
+
+{{template "ListSection" .Skills}}
+
+{{template "ActivitySection" .Research}}
+    </div>
+  </div>
+
+</article>
+</body>
+</html>
