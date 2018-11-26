@@ -46,7 +46,7 @@ import re
 
 
 GRAVATAR = "http://www.gravatar.com/avatar/{hash}?s=100"
-GRAVATAR = "http://www.jpfairbanks.net/docs/photo_small.jpg"
+GRAVATAR = "http://www.jpfairbanks.net/img/headshot_bw.png"
 
 
 class Processor(object):
@@ -144,6 +144,9 @@ def html(lines, contact_lines, *args):
                          ("<p>" + "</p><p>".join(contact_lines) + "</p>"))
     lines.insert(1, "<div>")
     lines.append("</div>")
+    lines.append('<link rel=stylesheet" href="http://jpfairbanks.net/css/bootstrap.min.css">')
+    lines.append('<link rel=stylesheet" href="http://jpfairbanks.net/css/custom.css">')
+    lines.append('<link rel=stylesheet" href="http://jpfairbanks.net/css/hugo-academic.css">')
 
     return "".join(lines)
 

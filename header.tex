@@ -1,8 +1,10 @@
-\usepackage[top=.5in, bottom=.5in, left=1in, right=1in]{geometry}
+\usepackage[top=.5in, bottom=.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{enumitem}
+% \setlist[itemize]{leftmargin=*}
 \usepackage{tgpagella}
 \usepackage{titlesec}
 \titleformat{\section}{\huge\bfseries}{\thesection}{1em}{}
-\titlespacing{\section}{0pt}{0pt}{1em}
+\titlespacing{\section}{0pt}{0pt}{0.5em}
 \titleformat{\subsection}{\large\bfseries\MakeUppercase}{\thesubsection}{1em}{}
 
 %\usepackage{multicol}
@@ -10,7 +12,10 @@
 \hyphenation{Media-Wiki}
 
 \renewcommand{\labelitemi}{}
-\renewcommand{\labelitemii}{\raise .5ex\hbox{\tiny$\blacktriangleright$}}
+% \renewcommand{\labelitemii}{}
+% \renewcommand{\labelitemiii}{\raise .5ex\hbox{\tiny$\blacktriangleright$}}
+\renewcommand{\labelitemii}{\raise .5ex\hbox{\color{sky}\tiny$\blacktriangleright$}}
+\renewcommand{\labelitemiii}{}
 
 % from http://tex.stackexchange.com/a/29796/16139
 \newsavebox{\zerobox}
@@ -22,3 +27,12 @@
   {\par\vss\egroup\ht\zerobox=0pt \wd\zerobox=0pt \dp\zerobox=0pt
    \box\zerobox}
 
+\usepackage{xcolor}
+\usepackage{sectsty}
+\definecolor{naval}{HTML}{0A476D}
+\definecolor{sky}{HTML}{87BCDE}
+\definecolor{leaf}{HTML}{477334}%94ae89}
+
+\chapterfont{\color{leaf}}  % sets colour of chapters
+\sectionfont{\color{leaf}}  % sets colour of sections
+\subsectionfont{\color{leaf}}  % sets colour of subsections
