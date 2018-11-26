@@ -1,0 +1,541 @@
+Title = "Resume"
+Author = "James Fairbanks"
+Email = "James.Fairbanks@gtri.gatech.edu"
+GitHub = "jpfairbanks"
+Name = "James Fairbanks, PhD"
+URL = "jpfairbanks.com"
+Date = "\\today"
+Header = ""
+Body = "Hello Latex"
+
+[Education]
+  Name = "Education"
+  Label = "Education"
+  Body = ""
+
+  [[Education.Schools]]
+    Name = "Georgia Institute of Technology"
+    Major = "Ph.D Computational Science and Engineering"
+    Minor = ""
+    Advisor = "Professor David A. Bader"
+    Thesis = ""
+    Dissertation = "Graph Analysis Combining Numerical Statistical and Streaming Techniques"
+    Qualifier = "Computational Data Analysis (ML) and High Performance Computing (HPC)"
+    Committee = "Rich Vuduc, Haesun Park, Polo Chau, Dana Randall, G. Sanders (LLNL)"
+    Address = "Atlanta, GA"
+    Dates = "2012 -- 2016"
+    Details = "Research Assistant 2012, Teaching Assistant 2016"
+
+  [[Education.Schools]]
+    Name = "University of Florida"
+    Major = "B.S. Mathematics"
+    Minor = ""
+    Advisor = ""
+    Thesis = "A Ramsey Theorem for Indecomposable Matchings"
+    Dissertation = ""
+    Qualifier = ""
+    Committee = ""
+    Address = "Gainesville, FL"
+    Dates = "2009 -- 2012"
+    Details = "Summa cum laude"
+
+[Experience]
+  Name = "Work Experience"
+  Label = "work-experience"
+  Body = ""
+
+  [[Experience.Items]]
+    Name = "Georgia Tech Research Institute (GTRI)"
+    Address = "Atlanta, GA"
+    Title = "Research Engineer II"
+    Dates = "May 2016 - Present"
+    Details = ["Conduct research into high performance data analysis algorithms and applications", "Write grant proposals (see Funding)", "Manage federally funded research contracts", "Deliver applied research projects to sponsors such as source code, web applications, technical reports", "Mentor and advise students in connection to research projects"]
+
+  [[Experience.Items]]
+    Name = "Ionic Security"
+    Address = "Atlanta, GA"
+    Title = "Data Scientist"
+    Dates = "2015"
+    Details = ["Developed data analytics software", "Designed a service oriented architecture for near real time analysis written in Go and Julia", "Leveraged time series and network database technologies including Heka, InfluxDB, RabbitMQ, and ElasticSearch"]
+
+  [[Experience.Items]]
+    Name = "DOE -- Lawrence Livermore National Laboratory"
+    Address = "Livermore, CA"
+    Title = "Institute for Scientific Computing Research Intern"
+    Dates = "2014"
+    Details = ["Studied relationship between numerical accuracy of eigensolvers and solution quality of mincut graph partitioning", "Developed very fast approximate eigensolvers for large graphs", "Applied probabilistic reasoning to describe numerical computations", "Presented results at LLNL poster session"]
+
+  [[Experience.Items]]
+    Name = "IDA -- Center for Computing Sciences"
+    Address = "Bowie, MD"
+    Title = "Conducted research into Malware structure and similarities"
+    Dates = "2013"
+    Details = ["Studied execution patterns of malicious programs", "Developed clustering and methods for understanding the structure of malicious programs with graph analytics", "Built a high performance distributed system for conducting these analyses with ZeroMQ communication"]
+
+[Funding]
+  Name = "Funding"
+  Label = "funding"
+
+  [[Funding.Grants]]
+    Title = "Artificial Intelligence Exporation -- Automating Scientific Knowledge Extraction"
+    Amount = "≈1M"
+    Agency = "DARPA"
+    Role = "Principal Investigator"
+    Agreement = "Agreement No.~HR00111990008"
+    ProjectID = ""
+    Start = "2018"
+    End = "2020"
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+  [[Funding.Grants]]
+    Title = "Developing Novel Means of Evidence Collection"
+    Amount = "≈400K"
+    Agency = "National Inst. of Justice"
+    Role = "Principal Investigator"
+    Agreement = "Grant Number 2016-MU-MU-K004"
+    ProjectID = ""
+    Start = "2016"
+    End = "2018"
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+  [[Funding.Grants]]
+    Title = "XAMINE Challenge"
+    Amount = ""
+    Agency = "Office of the Director of National Intelligence"
+    Role = "Winner"
+    Agreement = ""
+    ProjectID = ""
+    Start = "2018"
+    End = ""
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+  [[Funding.Grants]]
+    Title = "National Defense Science and Engineering Fellowship"
+    Amount = ""
+    Agency = "American Society of Engineering Education"
+    Role = "Fellow"
+    Agreement = ""
+    ProjectID = ""
+    Start = "2013"
+    End = "2016"
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+  [[Funding.Grants]]
+    Title = "Performance Estimation of Underwater MCM Operations"
+    Amount = "≈990K"
+    Agency = "Office of Naval Research"
+    Role = "Task Lead"
+    Agreement = "Contract No. N00014-16-C-3041"
+    ProjectID = "0D79670000"
+    Start = "2016"
+    End = "2019"
+    [Funding.Grants.Involved]
+      Start = "2018"
+      End = "Present"
+
+  [[Funding.Grants]]
+    Title = "Multi-source Anticipatory Intelligence"
+    Amount = ""
+    Agency = "GTRI Strategic Initiative"
+    Role = "Task Lead"
+    Agreement = ""
+    ProjectID = ""
+    Start = "2016"
+    End = "2019"
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+  [[Funding.Grants]]
+    Title = "Automation for UxV-based Mine Countermeasures"
+    Amount = "540K"
+    Agency = "Office of Naval Research"
+    Role = "Performer"
+    Agreement = "Contract No. N00014-15-C-5172"
+    ProjectID = "0D77150000"
+    Start = "2015"
+    End = "2019"
+    [Funding.Grants.Involved]
+      Start = "2018"
+      End = "2019"
+
+  [[Funding.Grants]]
+    Title = "Healthy Wealthy Wise"
+    Amount = ""
+    Agency = "GTRI Strategic Initiative"
+    Role = "Performer"
+    Agreement = ""
+    ProjectID = ""
+    Start = "2016"
+    End = "2017"
+    [Funding.Grants.Involved]
+      Start = ""
+      End = ""
+
+[Research]
+  Name = "Research"
+  Label = "research"
+
+  [[Research.Categories]]
+    Name = "Peer Reviewed Journal Articles"
+
+    [[Research.Categories.Activities]]
+      Date = "2015"
+      Title = "Behavioral Clusters in Dynamic Graphs"
+      Authors = "J. P. Fairbanks, R. Kannan, H. Park, D. A. Bader"
+      Venue = "Parallel Computing Special Issue of Scientific Graph Analysis"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "Dec 2011"
+      Title = "A Ramsey Theorem for Indecomposable Matchings"
+      Authors = "J. P. Fairbanks"
+      Venue = "Electronic Journal of Combinatorics, Vol 18(1)"
+      URL = "http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p227/pdf"
+
+  [[Research.Categories]]
+    Name = "Peer Reviewed Conference Publications"
+
+    [[Research.Categories.Activities]]
+      Date = "Oct 2018"
+      Title = "Digital Witness: Remote Methods for Volunteering Digital Evidence on Mobile Devices"
+      Authors = "N. Campbell, T. Goodyear, W. Messer, E. Stuart, J. P. Fairbanks"
+      Venue = "IEEE Technologies for Homeland Security"
+      URL = "http://ieee-hst.org/october23.htm"
+
+    [[Research.Categories.Activities]]
+      Date = "Sep 2018"
+      Title = "Performance Effects of Backing Data Stores in Community Detection Algorithms"
+      Authors = "R. Varkey Thankachan, B. P. Swenson, J. P. Fairbanks"
+      Venue = "IEEE High Performance Extreme Computing"
+      URL = "http://ieee-hpec.org/copy/agendatext.html"
+
+    [[Research.Categories.Activities]]
+      Date = "Feb 2018"
+      Title = "Credibility Assessment in the News: Do we need to read?"
+      Authors = "N. Fitch, N. Knauf, J. P. Fairbanks, E. Briscoe"
+      Venue = "ACM WSDM MIS2"
+      URL = "http://snap.stanford.edu/mis2/files/MIS2_paper_17.pdf"
+
+    [[Research.Categories.Activities]]
+      Date = "Sep 2017"
+      Title = "Integrating Productivity-Oriented Programming Languages with High-Performance Data Structures"
+      Authors = "R. Varkey Thankachan, E. Hein, B. P. Swenson, J. P. Fairbanks"
+      Venue = "IEEE High Performance Extreme Computing"
+      URL = "https://ieeexplore.ieee.org/document/8091068/"
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Deriving Streaming Graph Algorithms from Static Definitions"
+      Authors = "J. P. Fairbanks, D. M. Ediger"
+      Venue = "IEEE International Parallel and Distributed Processing Graph Algorithms Building Blocks"
+      URL = "http://graphanalysis.org/GABB17_program_final.pdf"
+
+    [[Research.Categories.Activities]]
+      Date = "Jan 2017"
+      Title = "Graph Partitioning with Spectral Blends"
+      Authors = "J. P. Fairbanks, D. A. Bader, and G. D. Sanders"
+      Venue = "Oxford Journal of Complex Networks"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Graph Ranking Guarantees for Numerical Approximations to Katz Centrality"
+      Authors = "E. Nathan, G. Sanders, J. P. Fairbanks, V. Henson and D. Bader"
+      Venue = "International Conference On Computational Science"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Deriving Streaming Graph Algorithms from Static Definitions."
+      Authors = "D. M. Ediger and J. P. Fairbanks"
+      Venue = "IEEE Parallel and Distributed Processing - Graph Algorithm Building Blocks"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = ""
+      Title = "A local measure of community change in dynamic graphs."
+      Authors = "A. Zakrzewska, E. Nathan, J. P. Fairbanks, D. A. Bader"
+      Venue = "IEEE/ACM ASONAM"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "Jul 2016"
+      Title = "Novel Stopping Criteria for Spectral Partitioning"
+      Authors = "J. P. Fairbanks, A. Zakrzewska, D.A. Bader"
+      Venue = "SIAM Network Science"
+      URL = "www.siam.org/meetings/ns16/"
+
+    [[Research.Categories.Activities]]
+      Date = "Aug 2013"
+      Title = "A Statistical Framework for Analyzing Streaming Graphs"
+      Authors = "J. P. Fairbanks, D. Ediger, R. McColl, D.A. Bader, E. Gilbert"
+      Venue = "IEEE/ACM ASONAM"
+      URL = "http://stingergraph.com/data/uploads/papers/streaming-twitter-stats.pdf"
+
+  [[Research.Categories]]
+    Name = "Oral Presentations"
+
+    [[Research.Categories.Activities]]
+      Date = "Nov 2018"
+      Title = "Data Science and Graph Analytics with Julia"
+      Details = ["Host: UF Data Science and Informatics"]
+      Authors = "J. P. Fairbanks"
+      Venue = "University of Florida Informatics Institute"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2018"
+      Title = "Solving Applied Graph Theory Problems in the JuliaGraphs ecosystem"
+      Details = ["Host: Alan Edelman, MIT Math/CSAIL"]
+      Authors = "J. P. Fairbanks"
+      Venue = "MIT CSAIL Seminar"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2018"
+      Title = "Graph Interfaces: Bespoke Graphs for Every Occasion"
+      Authors = "M. Besan\\c{c}on, J. P. Fairbanks"
+      Venue = "JuliaCon, London, UK"
+      URL = "https://youtu.be/OD-BSn4FZ2A"
+
+    [[Research.Categories.Activities]]
+      Date = "2018"
+      Title = "The JuliaGraphs Ecosystem: Move Fast and Don't Break Things"
+      Authors = "J. P. Fairbanks"
+      Venue = "JuliaCon, London, UK"
+      URL = "https://youtu.be/OZuQoxTPoyM"
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Assessing Credibility in Global Media Networks"
+      Authors = "J. P. Fairbanks, Human Language Technologies"
+      Venue = ""
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Using Big Data to Predict and Analyze Cooperation and Conflict"
+      Authors = "T. Frederick, C. Herlihy, J. P. Fairbanks"
+      Venue = "The Conflict Conference at UT-Austin"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "LightGraphs: Our Network, Our Story"
+      Authors = "S. Bromberger, J. P. Fairbanks"
+      Venue = "JuliaCon, Berkeley, CA"
+      URL = "https://youtu.be/MFD-qmApXl8"
+
+  [[Research.Categories]]
+    Name = "Posters"
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "QueryGarden: growing healthy applications in well prepared SQL"
+      Authors = "J. P. Fairbanks"
+      Venue = "OHDSI Symposium"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2017"
+      Title = "Implementing Real-Time Patient Level Predictions Using PLP Models"
+      Authors = "C. S. Brown, J. D. Duke, , J. P. Fairbanks, C. Herlihy, K. Mukadam, J. Poovey, M. Rost"
+      Venue = "OHDSI Symposium"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "Mar 2015"
+      Title = "Discovering Block Structure with Approximate Eigenvectors"
+      Authors = ""
+      Venue = "SIAM Computational Science and Engineering"
+      URL = ""
+
+    [[Research.Categories.Activities]]
+      Date = "2012"
+      Title = "Ramsey Theorem for Indecomposable Matchings"
+      Authors = ""
+      Venue = "Graph Theory at Georgia Tech (GT@GT)"
+      URL = ""
+
+[OpenSource]
+  Name = "Open Source"
+  Label = "open-source"
+  Items = ["Core maintainer of \\href{github.com/JuliaGraphs/LightGraphs.jl}{\\emph{LightGraphs}} the most widely used Graph Algorithm Package in \\href{julialang.org}{\\emph{Julia}}.", "Developer of \\href{stingergraph.com}{\\emph{STINGER}} the fastest streaming dynamic graph library for shared memory parallel computers."]
+
+[Teaching]
+  Name = "Teaching"
+  Label = "teaching"
+
+  [[Teaching.Categories]]
+    Name = "Professional Education"
+
+    [[Teaching.Categories.Activities]]
+      Date = "Fall 2018"
+      Title = "Programming for Data Science with Beverly Wright"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+  [[Teaching.Categories]]
+    Name = "Georgia Tech Professional Education"
+
+    [[Teaching.Categories.Activities]]
+      Date = "Spring 2017"
+      Title = "Data Analytics Methodology with J. Poovey, D. Ediger, and M. Rost."
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Teaching.Categories.Activities]]
+      Date = "Fall 2016"
+      Title = "Big Data Analytics with J. Poovey, D. Ediger, and M. Rost."
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+  [[Teaching.Categories]]
+    Name = "Teaching Assistant at Georgia Tech"
+
+    [[Teaching.Categories.Activities]]
+      Date = "Spring 2016"
+      Title = "CSE 6643 Numerical Linear Algebra with Prof. Haesun Park"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Teaching.Categories.Activities]]
+      Date = "Spring 2014"
+      Title = "CSE 6220 High Performance Computing with Prof. Srinivas Aluru"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+[Achievements]
+  Name = "Achievements"
+  Label = "achievements"
+
+  [[Achievements.Categories]]
+    Name = "Honors, Awards, and Fellowships"
+
+    [[Achievements.Categories.Activities]]
+      Date = "2012 - 2016"
+      Title = "Presidential Fellowship for Graduate Study at Georgia Tech"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2011 - 2012"
+      Title = "University Scholar at the University of Florida"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2012"
+      Title = "Kermit Sigmon Scholarship *for service to the mathematical community*"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2015"
+      Title = "Tau Beta Pi, Engineering Honor Society, Georgia Tech Chapter"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2012"
+      Title = "Phi Beta Kappa, University of Florida Chapter"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+  [[Achievements.Categories]]
+    Name = "Leadership and Service"
+
+    [[Achievements.Categories.Activities]]
+      Date = "2018"
+      Title = "JuliaCon Organizing Committee Vice Program Chair"
+      Details = ["Organized the technical program of a 3 day international conference on the Julia programming language", "Ran Program Committee meetings to decide on accepted abstracts and presentations", "Led poster session preparations"]
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2017"
+      Title = "Tau Beta Pi Atlanta Alumni Chapter President"
+      Details = ["Organized professional networking events for local Atlanta Area Engineers"]
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2015"
+      Title = "Georgia Tech College of Computing Graduate Student Association VP for the School of CSE"
+      Details = ["Represented department students to university administration committees on curriculum and funding", "Organized social and professional networking events for graduate students", "Chaired the organizing committee of HotCSE graduate research seminar providing early career presentation opportunities to graduate students"]
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2011"
+      Title = "Univ. Florida Pi Mu Epsilon Chapter President"
+      Details = ["Organized a series of talks for the mathematics students at UF on diverse mathematical topics and skills incl. LaTeX, programming and technical communication in the field."]
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+    [[Achievements.Categories.Activities]]
+      Date = "2009"
+      Title = "Eagle Scout"
+      Authors = ""
+      Venue = ""
+      URL = ""
+
+[Skills]
+  Name = "Selected Technical Skills"
+  Label = "skills"
+  Items = ["Programming languages (most familiar to least) Julia, Golang, Python, C, SQL, Bash, Matlab", "Computational Data Analysis (pandas, sklearn, Jupyter)", "Web development with Golang and Python (flask)", "Database Applications primarily with PostgreSQL and MongoDB", "Practical computing skills such as \texttt{*NIX}, git, make, \\LaTeX", "Continuous Integration/Deployment: Docker, DC/OS, Kubernetes", "Avid Linux User"]
+
+[Mentoring]
+  Name = "Mentoring"
+  Label = "mentoring"
+
+  [[Mentoring.Students]]
+    Name = "Rohit Varkey"
+    Degree = "MS CS Georgia Tech"
+    Year = 2018
+    Company = "Google"
+    Dates = "2016-2018"
+
+  [[Mentoring.Students]]
+    Name = "Micah Halter"
+    Degree = "BS CS Georgia Tech"
+    Year = 2019
+    Company = "GT"
+    Dates = "2016-Present"
+
+  [[Mentoring.Students]]
+    Name = "Nate Knauf"
+    Degree = "BS CS Georgia Tech"
+    Year = 2019
+    Company = "GT"
+    Dates = "2016"
+
+  [[Mentoring.Students]]
+    Name = "Pushkar Godbole"
+    Degree = "MS CSE Georgia Tech"
+    Year = 2016
+    Company = "Yelp"
+    Dates = "2015"
