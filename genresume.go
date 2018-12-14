@@ -234,7 +234,7 @@ func NewResume() Document {
 						Venue:   "Graph Theory at Georgia Tech (GT@GT)",
 						Authors: "",
 						Date:    "2012"}}}}}
-	oss := []string{`Core maintainer of \href{github.com/JuliaGraphs/LightGraphs.jl}{\emph{LightGraphs}} the most widely used Graph Algorithm Package in \href{julialang.org}{\emph{Julia}}.`,
+	oss := []string{`Lead developer of \href{github.com/jpfairbanks/SemanticModels.jl}{SemanticModels.jl}, a DARPA funded project for Scientific Knowledge Extraction and Reasoning`, `Core maintainer of \href{github.com/JuliaGraphs/LightGraphs.jl}{\emph{LightGraphs}} the most widely used Graph Algorithm Package in \href{julialang.org}{\emph{Julia}}.`,
 		`Developer of \href{stingergraph.com}{\emph{STINGER}} the fastest streaming dynamic graph library for shared memory parallel computers.`}
 	teaching := []Category{
 		Category{

@@ -369,7 +369,7 @@ Body = "Hello Latex"
 [OpenSource]
   Name = "Open Source"
   Label = "open-source"
-  Items = ["Core maintainer of \\href{github.com/JuliaGraphs/LightGraphs.jl}{\\emph{LightGraphs}} the most widely used Graph Algorithm Package in \\href{julialang.org}{\\emph{Julia}}.", "Developer of \\href{stingergraph.com}{\\emph{STINGER}} the fastest streaming dynamic graph library for shared memory parallel computers."]
+  Items = ["Lead developer of \\href{github.com/jpfairbanks/SemanticModels.jl}{SemanticModels.jl}, a DARPA funded project for Scientific Knowledge Extraction and Reasoning", "Core maintainer of \\href{github.com/JuliaGraphs/LightGraphs.jl}{\\emph{LightGraphs}} the most widely used Graph Algorithm Package in \\href{julialang.org}{\\emph{Julia}}.", "Developer of \\href{stingergraph.com}{\\emph{STINGER}} the fastest streaming dynamic graph library for shared memory parallel computers."]
 
 [Teaching]
   Name = "Teaching"
